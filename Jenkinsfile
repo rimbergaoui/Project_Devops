@@ -21,7 +21,7 @@ pipeline {
         }
 
         stage('Build Server Image') {
-            when { changeset "backend/*"}
+            //when { changeset "backend/*"}
             steps {
                 dir('backend') {
                     script {
@@ -32,7 +32,7 @@ pipeline {
         }
 
         stage('Build Frontend Image') {
-            when { changeset "frontend/*"}
+            //when { changeset "frontend/*"}
             steps {
                 dir('frontend') {
                     script {
@@ -43,7 +43,7 @@ pipeline {
         }
 
         stage('Scan Server Image') {
-            when { changeset "backend/*"}
+            //when { changeset "backend/*"}
             steps {
                 script {
                     sh """
@@ -57,7 +57,7 @@ pipeline {
         }
 
         stage('Scan Client Image') {
-            when { changeset "frontend/*"}
+            //when { changeset "frontend/*"}
             steps {
                 script {
                     sh """
@@ -71,7 +71,7 @@ pipeline {
         }
 
         stage('Push Server Image to Docker Hub') {
-            when { changeset "backend/*"}
+            //when { changeset "backend/*"}
             steps {
                 script {
                     docker.withRegistry('https://index.docker.io/v1/', 'dockerhub') {
@@ -81,7 +81,7 @@ pipeline {
             }
         }
         stage('Push Client Image to Docker Hub') {
-            when { changeset "frontend/*"}
+            //when { changeset "frontend/*"}
             steps {
                 script {
                     docker.withRegistry('https://index.docker.io/v1/', 'dockerhub') {
