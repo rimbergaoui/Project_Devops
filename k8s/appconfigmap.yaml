@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: appconfigmap
+data:
+  database-name: "devops"
+  database-username : "postgres"
+  SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/devops

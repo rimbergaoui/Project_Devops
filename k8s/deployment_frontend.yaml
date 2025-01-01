@@ -10,8 +10,6 @@ spec:
   selector:
     matchLabels:
       app: frontend
-  strategy:
-    type: RollingUpdate
   template:
     metadata:
       name: frontend
@@ -20,11 +18,11 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: sofienech/gestion_frontend:57
+          image: rimbergaoui/frontend
           ports:
             - containerPort: 80
               name: http
-          env:
-            - name: REACT_APP_BACKEND_PROD
-              value: http://20.67.209.194:82
+          envFrom:
+          - configMapRef: 
+              name: appconfigmap
 

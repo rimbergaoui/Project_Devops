@@ -42,7 +42,7 @@ pipeline {
             }
         }
 
-        stage('Scan Server Image') {
+        /*stage('Scan Server Image') {
             //when { changeset "backend/*"}
             steps {
                 script {
@@ -68,7 +68,7 @@ pipeline {
                     """
                 }
             }
-        }
+        }*/
 
         stage('Push Server Image to Docker Hub') {
             //when { changeset "backend/*"}

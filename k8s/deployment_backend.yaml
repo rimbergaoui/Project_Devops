@@ -9,8 +9,6 @@ spec:
   selector:
     matchLabels:
       app: backend
-  strategy:
-    type: RollingUpdate
   replicas: 1
   template:
     metadata:
@@ -18,12 +16,13 @@ spec:
         app: backend
     spec:
       containers:
-        - image: sofienech/gestion_backend:10
+        - image: rimbergaoui/backend
           name: backend
           ports:
             - containerPort: 8081
               name: http
-          env:
-            - name: SPRING_DATASOURCE_URL
-              value: jdbc:postgresql://service-database:80/test
+          envFrom:
+          - configMapRef: 
+              name: appconfigmap
+              
 
