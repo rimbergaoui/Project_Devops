@@ -1,0 +1,44 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: devops-project
+  name: database
+  labels:
+    app: database
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: database
+  template:
+    metadata:
+      name: database
+      labels:
+        app: database
+    spec:
+      containers:
+        - name: database
+          image: postgres:15-alpine
+          ports:
+            - containerPort: 5432
+              name: http
+          env:
+            - name: POSTGRES_DB
+              valueFrom:
+                configMapKeyRef:
+                  key: database-name
+                  name: db
+            - name: POSTGRES_USER
+              valueFrom:
+                configMapKeyRef:
+                  key: database-username
+                  name: db
+            - name: POSTGRES_PASSWORD
+              value: sofiene
+          volumeMounts:
+            - mountPath: "/var/lib/postgresql/data"
+              name: database-storage
+      volumes:
+        - name: database-storage
+          persistentVolumeClaim:
+            claimName: azure-managed-disk-pvc

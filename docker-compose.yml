@@ -1,0 +1,41 @@
+version: '3'
+services:
+  backend:
+    build: 
+      context: ./backend
+    container_name: backend
+    ports:
+      - "8081:8081"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/devops
+    networks:
+      - project
+    depends_on:
+      - db
+  frontend:
+    build: 
+      context: ./frontend
+    container_name: frontend
+    ports:
+      - "80:80"
+    networks:
+      - project
+    depends_on:
+      - backend
+  db :
+    container_name: db
+    image: postgres:15-alpine
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_PASSWORD=rima
+      - POSTGRES_USER=postgres
+      - POSTGRES_DB=devops
+    networks:
+      - project
+
+networks: 
+  project:
+    driver: bridge
+
+      
