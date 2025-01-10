@@ -74,5 +74,5 @@ Ce projet met en œuvre les pratiques DevOps modernes avec un backend Spring Boo
    
 6. Déployez les services sur Kubernetes :
     - Utilisez Helm Charts pour orchestrer le déploiement Kubernetes.
-    - 
+      
 ![Déploiement Kubernetes via Helm Charts](./Captures/charts.png)  
