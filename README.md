@@ -40,7 +40,7 @@ Ce projet met en œuvre les pratiques DevOps modernes avec un backend Spring Boo
 
 ## **Captures d'Écran**
 ### Construction de l'image Docker pour le Frontend
-![Construction de l'image Docker pour le Frontend](https://github.com/rimbergaoui/Project_Devops/main/Captures/build_frontend.png)
+![Construction de l'image Docker pour le Frontend](./Captures/build_frontend.png)
 
    
 
