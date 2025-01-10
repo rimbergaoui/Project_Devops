@@ -6,15 +6,12 @@ Un projet complet combinant un backend Spring Boot, un frontend React, et une in
 
 ## **Table des matières**
 - [Aperçu du Projet](#aperçu-du-projet)
-- [Structure du Projet](#structure-du-projet)
 - [Technologies Utilisées](#technologies-utilisées)
 - [Étapes pour Lancer le Projet](#étapes-pour-lancer-le-projet)
 - [Commandes Clés et Explications](#commandes-clés-et-explications)
 - [Pipeline CI/CD avec Jenkins](#pipeline-cicd-avec-jenkins)
 - [Déploiement sur Kubernetes](#déploiement-sur-kubernetes)
 - [Captures d'Écran](#captures-décran)
-- [Auteurs et Contact](#auteurs-et-contact)
-- [Licence](#licence)
 
 ---
 
@@ -41,5 +38,9 @@ Ce projet met en œuvre les pratiques DevOps modernes avec un backend Spring Boo
 ## **Étapes pour Lancer**
 1. Clonez le projet :
    ```bash
-   git clone https://github.com/votre-utilisateur/votre-projet.git
-   cd votre-projet
+   git clone https://github.com/rimbergaoui/Project_Devops.git
+   cd Project_Devops
+   
+2. Construisez et exécutez avec Docker Compose :
+   docker-compose up --build
+
