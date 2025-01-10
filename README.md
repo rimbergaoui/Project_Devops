@@ -44,14 +44,12 @@ Ce projet met en œuvre les pratiques DevOps modernes avec un backend Spring Boo
      docker build -t frontend-image ./frontend
      
  ![Construction de l'image Docker pour le Frontend](./Captures/build_frontend.png)
+   - **Backend** :
+     ```bash
+     docker build -t backend-image ./backend
+     
+ ![Construction de l'image Docker pour le Backend](./Captures/build_back.png) 
 
-## **Captures d'Écran**
-Les captures montrent chaque étape importante du projet, depuis la construction des images Docker jusqu'au pipeline CI/CD et au déploiement Kubernetes.
-### Construction de l'image Docker pour le Frontend
-![Construction de l'image Docker pour le Frontend](./Captures/build_frontend.png)
-
-### Construction de l'image Docker pour le Backend  
-![Construction de l'image Docker pour le Backend](./Captures/build_back.png) 
 
 ### Configuration de PostgreSQL avec Docker  
 ![Configuration de PostgreSQL avec Docker](./Captures/postgres+docker.png)
