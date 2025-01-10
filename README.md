@@ -58,7 +58,7 @@ Ce projet met en œuvre les pratiques DevOps modernes avec un backend Spring Boo
 ![Interface de Configuration de Jenkins](./Captures/jenckins.png)  
 
 ### Pipeline CI/CD Configuré dans Jenkins  
-![Pipeline CI/CD Configuré dans Jenkins](./Captures/pipeline_jenkins.png)  
+![Pipeline CI/CD Configuré dans Jenkins](./Captures/pipline_jenkins.png)  
 
 ### Configuration de PostgreSQL avec Docker  
 ![Configuration de PostgreSQL avec Docker](./Captures/postgres+docker.png)
