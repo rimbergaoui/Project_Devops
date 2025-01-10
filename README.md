@@ -29,8 +29,19 @@ Ce projet met en œuvre les pratiques DevOps modernes avec un backend Spring Boo
 
 ---
 
-## **Structure du Projet**
 
-Voici la structure principale du projet :
+---
 
-📦 Projet ┣ 📂 backend (Dockerfile, application.properties) ┣ 📂 frontend (Dockerfile) ┣ 📂 charts (Helm Charts) ┣ 📂 captures (Images de pipelines et configurations) ┣ 📄 docker-compose.yml ┣ 📄 Jenkinsfile ┗ 📄 README.md
+## **Technologies Utilisées**
+- **Backend** : Java (Spring Boot)
+- **Frontend** : React
+- **Base de Données** : PostgreSQL
+- **DevOps** : Docker, Docker Compose, Kubernetes, Jenkins, Helm
+
+---
+
+## **Étapes pour Lancer**
+1. Clonez le projet :
+   ```bash
+   git clone https://github.com/votre-utilisateur/votre-projet.git
+   cd votre-projet
