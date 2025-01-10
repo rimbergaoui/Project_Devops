@@ -38,6 +38,12 @@ Ce projet met en œuvre les pratiques DevOps modernes avec un backend Spring Boo
    git clone https://github.com/rimbergaoui/Project_Devops.git
    cd Project_Devops
 
+2. Construisez les images Docker :
+   - **Frontend** :
+     ```bash
+     docker build -t frontend-image ./frontend
+     ![Construction de l'image Docker pour le Frontend](./Captures/build_frontend.png)
+
 ## **Captures d'Écran**
 Les captures montrent chaque étape importante du projet, depuis la construction des images Docker jusqu'au pipeline CI/CD et au déploiement Kubernetes.
 ### Construction de l'image Docker pour le Frontend
