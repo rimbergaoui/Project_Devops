@@ -129,7 +129,7 @@ export default function AddUser() {
           <div className='md:w-2/3'>
             <Link to='/'>
               <button
-                className='shadow bg-vert focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 ml-16 rounded'
+                className='shadow bg-[#0a0e27] hover:bg-[#12172e] focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 ml-16 rounded'
                 type='button'
                 onClick={addUser}
               >

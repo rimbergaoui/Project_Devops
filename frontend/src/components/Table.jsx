@@ -65,7 +65,7 @@ export default function Table() {
       <div>
         <Link to={'/user'}>
           <div className='flex flex-row-reverse mt-16'>
-            <button className='bg-vert text-white px-4 py-3 font-bold rounded-xl text-l w-24 text drop-shadow-xl'>
+            <button className="bg-[#0a0e27] hover:bg-[#12172e] text-white px-4 py-3 font-bold rounded-xl text-l w-24 drop-shadow-xl">
               Ajouter
             </button>
           </div>
@@ -81,26 +81,26 @@ export default function Table() {
         />
       </div>
       <div className='mt-4'>
-        <table className='min-w-full divide-y divide-gray-200'>
+        <table className="min-w-full divide-y divide-gray-300 bg-gray-100 rounded-lg shadow-md">
           {/* Table header */}
           <thead>
             <tr>
-              <th className='border px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider '>
+              <th className="border px-6 py-3 bg-gray-200 text-left text-xs font-medium text-gray-600 uppercase tracking-wider">
                 N°
               </th>
-              <th className='border px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider'>
+              <th className="border px-6 py-3 bg-gray-200 text-left text-xs font-medium text-gray-600 uppercase tracking-wider">
                 Prénom
               </th>
-              <th className='border px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider'>
+              <th className="border px-6 py-3 bg-gray-200 text-left text-xs font-medium text-gray-600 uppercase tracking-wider">
                 Nom
               </th>
-              <th className='border px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider'>
+              <th className="border px-6 py-3 bg-gray-200 text-left text-xs font-medium text-gray-600 uppercase tracking-wider">
                 Sexe
               </th>
-              <th className='border px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider'>
+              <th className="border px-6 py-3 bg-gray-200 text-left text-xs font-medium text-gray-600 uppercase tracking-wider">
                 Tel
               </th>
-              <th className='border px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider'>
+              <th className="border px-6 py-3 bg-gray-200 text-left text-xs font-medium text-gray-600 uppercase tracking-wider">
                 Operation
               </th>
             </tr>
@@ -108,26 +108,29 @@ export default function Table() {
           {/* Table body */}
           <tbody>
             {currentPageData.map((item) => (
-              <tr key={item.id}>
-                <td className='border px-6 py-4 whitespace-nowrap'>
+              <tr
+                key={item.id}
+                className="bg-white hover:bg-gray-200 cursor-pointer transition-all duration-300"
+              >
+                <td className="border px-6 py-4 whitespace-nowrap text-gray-700">
                   {item.number}
                 </td>
-                <td className='border px-6 py-4 whitespace-nowrap'>
+                <td className="border px-6 py-4 whitespace-nowrap text-gray-700">
                   {item.prenom}
                 </td>
-                <td className='border px-6 py-4 whitespace-nowrap'>
+                <td className="border px-6 py-4 whitespace-nowrap text-gray-700">
                   {item.nom}
                 </td>
-                <td className='border px-6 py-4 whitespace-nowrap'>
+                <td className="border px-6 py-4 whitespace-nowrap text-gray-700">
                   {item.sex}
                 </td>
-                <td className='border px-6 py-4 whitespace-nowrap'>
+                <td className="border px-6 py-4 whitespace-nowrap text-gray-700">
                   {item.numTel}
                 </td>
-                <td className='border px-6 py-4 whitespace-nowrap'>
+                <td className="border px-6 py-4 whitespace-nowrap">
                   <button
                     onClick={() => handleDelete(item.id)}
-                    className='bg-red-500 hover:bg-red-700 text-white px-4 py-2 rounded-md'
+                    className="bg-red-500 hover:bg-red-700 text-white px-4 py-2 rounded-md"
                   >
                     Delete
                   </button>
