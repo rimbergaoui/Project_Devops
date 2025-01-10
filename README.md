@@ -33,8 +33,4 @@ Ce projet met en œuvre les pratiques DevOps modernes avec un backend Spring Boo
 
 Voici la structure principale du projet :
 
-
-📦 VotreProjet ┣ 📂 backend ┃ ┣ 📄 Dockerfile ┃ ┣ 📄 application.properties ┣ 📂 frontend ┃ ┣ 📄 Dockerfile ┣ 📂 charts ┃ ┗ 📂 helm-charts ┣ 📂 captures ┃ ┣ 🖼️ build-frontend.png ┃ ┣ 🖼️ build-back.png ┃ ┣ 🖼️ charts.png ┃ ┣ 🖼️ docker-compose.png ┃ ┣ 🖼️ docker-hub+jenkins.png ┃ ┣ 🖼️ pipeline-jenkins.png ┃ ┣ 🖼️ postgres-avec-docker.png ┣ 📄 docker-compose.yml ┣ 📄 Jenkinsfile ┣ 📄 README.md
-
-markdown
-Copier le code
+📦 Projet ┣ 📂 backend (Dockerfile, application.properties) ┣ 📂 frontend (Dockerfile) ┣ 📂 charts (Helm Charts) ┣ 📂 captures (Images de pipelines et configurations) ┣ 📄 docker-compose.yml ┣ 📄 Jenkinsfile ┗ 📄 README.md
