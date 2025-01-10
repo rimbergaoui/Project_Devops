@@ -43,24 +43,24 @@ Ce projet met en œuvre les pratiques DevOps modernes avec un backend Spring Boo
 ![Construction de l'image Docker pour le Frontend](./Captures/build_frontend.png)
 
 ### Construction de l'image Docker pour le Backend  
-![Construction de l'image Docker pour le Backend](./Captures/build-back.png)  
+![Construction de l'image Docker pour le Backend](./Captures/build_back.png)  
 
 ### Déploiement Kubernetes via Helm Charts  
 ![Déploiement Kubernetes via Helm Charts](./Captures/charts.png)  
 
 ### Exécution des Services avec Docker Compose  
-![Exécution des Services avec Docker Compose](./Captures/docker-compose.png)  
+![Exécution des Services avec Docker Compose](./Captures/docker_compose.png)  
 
 ### Publication des Images sur Docker Hub avec Jenkins  
-![Publication des Images sur Docker Hub avec Jenkins](./Captures/docker-hub+jenkins.png)  
+![Publication des Images sur Docker Hub avec Jenkins](./Captures/docker_hub+jenkins.png)  
 
 ### Interface de Configuration de Jenkins  
 ![Interface de Configuration de Jenkins](./Captures/jenckins.png)  
 
 ### Pipeline CI/CD Configuré dans Jenkins  
-![Pipeline CI/CD Configuré dans Jenkins](./Captures/pipeline-jenkins.png)  
+![Pipeline CI/CD Configuré dans Jenkins](./Captures/pipeline_jenkins.png)  
 
 ### Configuration de PostgreSQL avec Docker  
-![Configuration de PostgreSQL avec Docker](./Captures/postgres-avec-docker.png)
+![Configuration de PostgreSQL avec Docker](./Captures/postgres+docker.png)
    
 
