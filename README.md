@@ -8,7 +8,6 @@ Un projet complet combinant un backend Spring Boot, un frontend React, et une in
 - [Aperçu du Projet](#aperçu-du-projet)
 - [Technologies Utilisées](#technologies-utilisées)
 - [Étapes pour Lancer le Projet](#étapes-pour-lancer-le-projet)
-- [Captures d'Écran](#captures-décran)
 
 ---
 
@@ -39,6 +38,7 @@ Ce projet met en œuvre les pratiques DevOps modernes avec un backend Spring Boo
    cd Project_Devops
 
 2. Construisez les images Docker :
+   
    - **Frontend** :
      ```bash
      docker build -t frontend-image ./frontend
@@ -50,25 +50,29 @@ Ce projet met en œuvre les pratiques DevOps modernes avec un backend Spring Boo
      
  ![Construction de l'image Docker pour le Backend](./Captures/build_back.png) 
 
+ 3. Configurez PostgreSQL dans Docker :
+    - PostgreSQL est conteneurisé et intégré au backend via Docker Compose.
 
-### Configuration de PostgreSQL avec Docker  
 ![Configuration de PostgreSQL avec Docker](./Captures/postgres+docker.png)
 
-### Exécution des Services avec Docker Compose  
+ 4. Exécutez Docker Compose pour démarrer les services :
+    ```bash
+    docker-compose up --build
+
 ![Exécution des Services avec Docker Compose](./Captures/docker_compose.png)  
 
-### Interface de Configuration de Jenkins  
-![Interface de Configuration de Jenkins](./Captures/jenckins.png)  
+5. Configurez Jenkins et exécutez le pipeline CI/CD :
+   - Configurez Jenkins pour automatiser les étapes CI/CD.
+   - Poussez les images Docker sur Docker Hub :
 
-### Publication des Images sur Docker Hub avec Jenkins  
+![Interface de Configuration de Jenkins](./Captures/jenckins.png) 
 ![Publication des Images sur Docker Hub avec Jenkins](./Captures/docker_hub+jenkins.png)  
+     
+   - Exécutez le pipeline complet :
 
-### Pipeline CI/CD Configuré dans Jenkins  
 ![Pipeline CI/CD Configuré dans Jenkins](./Captures/pipline_jenkins.png) 
-
-### Déploiement Kubernetes via Helm Charts  
-![Déploiement Kubernetes via Helm Charts](./Captures/charts.png)  
-
-
    
-
+6. Déployez les services sur Kubernetes :
+    - Utilisez Helm Charts pour orchestrer le déploiement Kubernetes.
+    - 
+![Déploiement Kubernetes via Helm Charts](./Captures/charts.png)  
