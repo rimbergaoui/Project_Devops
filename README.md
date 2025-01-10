@@ -52,11 +52,11 @@ Les captures montrent chaque étape importante du projet, depuis la construction
 ### Exécution des Services avec Docker Compose  
 ![Exécution des Services avec Docker Compose](./Captures/docker_compose.png)  
 
-### Publication des Images sur Docker Hub avec Jenkins  
-![Publication des Images sur Docker Hub avec Jenkins](./Captures/docker_hub+jenkins.png)  
-
 ### Interface de Configuration de Jenkins  
 ![Interface de Configuration de Jenkins](./Captures/jenckins.png)  
+
+### Publication des Images sur Docker Hub avec Jenkins  
+![Publication des Images sur Docker Hub avec Jenkins](./Captures/docker_hub+jenkins.png)  
 
 ### Pipeline CI/CD Configuré dans Jenkins  
 ![Pipeline CI/CD Configuré dans Jenkins](./Captures/pipline_jenkins.png) 
