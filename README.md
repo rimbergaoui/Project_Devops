@@ -39,6 +39,7 @@ Ce projet met en œuvre les pratiques DevOps modernes avec un backend Spring Boo
    cd Project_Devops
 
 ## **Captures d'Écran**
+Les captures montrent chaque étape importante du projet, depuis la construction des images Docker jusqu'au pipeline CI/CD et au déploiement Kubernetes.
 ### Construction de l'image Docker pour le Frontend
 ![Construction de l'image Docker pour le Frontend](./Captures/build_frontend.png)
 
