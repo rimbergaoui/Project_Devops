@@ -30,8 +30,6 @@ Ce projet met en œuvre les pratiques DevOps modernes avec un backend Spring Boo
 ---
 
 
----
-
 ## **Technologies Utilisées**
 - **Backend** : Java (Spring Boot)
 - **Frontend** : React
