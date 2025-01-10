@@ -6,3 +6,4 @@ data:
   database-name: "devops"
   database-username : "postgres"
   SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/devops
+  REACT_APP_BACKEND_PROD: 

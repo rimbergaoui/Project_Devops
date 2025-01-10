@@ -1,0 +1,14 @@
+apiVersion: v2
+name: devops
+description: A Helm chart for the devops application
+version: 1.0.0
+dependencies:
+  - name: frontend
+    version: 1.0.0
+    repository: https://github.com/rimbergaoui/Project_Devops/tree/main/mern_charts/charts/frontend
+  - name: backend
+    version: 1.0.0
+    repository: https://github.com/rimbergaoui/Project_Devops/tree/main/mern_charts/charts/backend
+  - name: postgres
+    version: 1.0.0
+    repository: https://github.com/rimbergaoui/Project_Devops/tree/main/mern_charts/charts/postgres

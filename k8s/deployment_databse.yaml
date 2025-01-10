@@ -34,7 +34,7 @@ spec:
                   key: database-username
                   name: db
             - name: POSTGRES_PASSWORD
-              value: sofiene
+              value: rima
           volumeMounts:
             - mountPath: "/var/lib/postgresql/data"
               name: database-storage

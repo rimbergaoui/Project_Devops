@@ -42,14 +42,14 @@ pipeline {
             }
         }
 
-        /*stage('Scan Server Image') {
+        stage('Scan Server Image') {
             //when { changeset "backend/*"}
             steps {
                 script {
                     sh """
                     docker run --rm -v /var/run/docker.sock:/var/run/docker.sock \\
                     -e TRIVY_DB_REPO=ghcr.io/aquasecurity/trivy-db \\
-                    aquasec/trivy:latest image --exit-code 0 --severity LOW,MEDIUM,HIGH,CRITICAL \\
+                    aquasec/trivy:latest image --exit-code 0 --severity --timeout 20m LOW,MEDIUM,HIGH,CRITICAL \\
                     ${IMAGE_NAME_SERVER}
                     """
                 }
@@ -68,7 +68,7 @@ pipeline {
                     """
                 }
             }
-        }*/
+        }
 
         stage('Push Server Image to Docker Hub') {
             //when { changeset "backend/*"}
