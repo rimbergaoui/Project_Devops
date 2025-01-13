@@ -15,3 +15,12 @@ spring:
         format_sql: true
     database: postgresql
     database-platform:  org.hibernate.dialect.PostgreSQLDialect
+
+mmanagement:
+  endpoints:
+    web:
+      exposure:
+        include: "prometheus"  # Expose l'endpoint Prometheus
+  endpoint:
+    metrics:
+      enabled: true
