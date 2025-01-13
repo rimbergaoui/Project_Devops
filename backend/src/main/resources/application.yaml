@@ -2,7 +2,7 @@ server:
   port: 8081
 spring:
   datasource:
-    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://localhost:5432/devops}
+    url: jdbc:postgresql://postgres-devops:5432/devops
     username : postgres
     password : rima
     driver-class-name: org.postgresql.Driver
