@@ -20,7 +20,7 @@ mmanagement:
   endpoints:
     web:
       exposure:
-        include: "prometheus"  # Expose l'endpoint Prometheus
+        include: prometheus, health
   endpoint:
     metrics:
       enabled: true
