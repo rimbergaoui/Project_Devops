@@ -90,7 +90,7 @@ Ce projet met en œuvre les pratiques DevOps modernes avec un backend Spring Boo
       
 ![Déploiement Kubernetes via Helm Charts](./Captures/charts.png)  
 
-    - Intégration de **ArgoCD** pour la mise en place d’une stratégie GitOps : 
+    - Intégration de ArgoCD pour la mise en place d’une stratégie GitOps : 
     
 ![Argo](./Captures/argocd2.png) 
 ![Argo](./Captures/argocd.png) 
