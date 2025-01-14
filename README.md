@@ -32,6 +32,7 @@ Ce projet met en œuvre les pratiques DevOps modernes avec un backend Spring Boo
 ---
 
 ## **Étapes pour Lancer**
+
 1. Clonez le projet :
    
    ```bash
@@ -41,11 +42,14 @@ Ce projet met en œuvre les pratiques DevOps modernes avec un backend Spring Boo
 3. Construisez les images Docker :
    
    - **Frontend** :
+     
      ```bash
      docker build -t frontend-image ./frontend
      
  ![Construction de l'image Docker pour le Frontend](./Captures/build_frontend.png)
+ 
    - **Backend** :
+     
      ```bash
      docker build -t backend-image ./backend
      
