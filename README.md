@@ -33,11 +33,12 @@ Ce projet met en œuvre les pratiques DevOps modernes avec un backend Spring Boo
 
 ## **Étapes pour Lancer**
 1. Clonez le projet :
+   
    ```bash
    git clone https://github.com/rimbergaoui/Project_Devops.git
    cd Project_Devops
 
-2. Construisez les images Docker :
+3. Construisez les images Docker :
    
    - **Frontend** :
      ```bash
@@ -51,17 +52,20 @@ Ce projet met en œuvre les pratiques DevOps modernes avec un backend Spring Boo
  ![Construction de l'image Docker pour le Backend](./Captures/build_back.png) 
 
  3. Configurez PostgreSQL dans Docker :
+    
     - PostgreSQL est conteneurisé et intégré au backend via Docker Compose.
 
 ![Configuration de PostgreSQL avec Docker](./Captures/postgres+docker.png)
 
  4. Exécutez Docker Compose pour démarrer les services :
+    
     ```bash
     docker-compose up --build
 
 ![Exécution des Services avec Docker Compose](./Captures/docker_compose.png)  
 
 5. Configurez Jenkins et exécutez le pipeline CI/CD :
+   
    - Configurez Jenkins pour automatiser les étapes CI/CD :
 
 ![Interface de Configuration de Jenkins](./Captures/jenckins.png) 
@@ -77,6 +81,7 @@ Ce projet met en œuvre les pratiques DevOps modernes avec un backend Spring Boo
 ![Pipeline CI/CD Configuré dans Jenkins](./Captures/pipline_jenkins.png) 
    
 6. Déployez les services sur Kubernetes :
+   
     - Utilisez Helm Charts pour orchestrer le déploiement Kubernetes :
       
 ![Déploiement Kubernetes via Helm Charts](./Captures/charts.png)  
