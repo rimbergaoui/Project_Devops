@@ -1,6 +1,6 @@
 # **DevOps Project: Spring Boot Backend & React Frontend**
 
-Un projet complet combinant un backend Spring Boot, un frontend React, et une intégration DevOps avec Docker, Docker Compose, Jenkins, Kubernetes, et PostgreSQL.
+Ce projet démontre l'intégration de pratiques DevOps pour le déploiement d'une application web composée d'un backend Spring Boot, d'un frontend React, et d'une base de données PostgreSQL. Il couvre l'ensemble du cycle de vie du développement, de la conteneurisation des services à l'automatisation des déploiements, en passant par l'orchestration des services et la gestion des métriques. Les technologies utilisées incluent **Docker**, **Jenkins**, **Kubernetes**, **Prometheus**, **Grafana**, et **ArgoCD**, assurant ainsi un déploiement évolutif, une gestion efficace des configurations et une observabilité complète du système.
 
 ---
 
@@ -13,21 +13,14 @@ Un projet complet combinant un backend Spring Boot, un frontend React, et une in
 
 ## **Aperçu du Projet**
 
-Ce projet met en œuvre les pratiques DevOps modernes avec un backend Spring Boot, un frontend React, et une base de données PostgreSQL. Il intègre :
+Ce projet illustre l'intégration des pratiques DevOps pour un déploiement continu, automatisé et évolutif. Voici les étapes clés :
 
-1. Conteneurisation des services avec Docker.
-2. Orchestration des services avec Docker Compose.
-3. Automatisation du pipeline CI/CD avec Jenkins.
-4. Déploiement évolutif avec Kubernetes et Helm.
-
----
-
-
-## **Technologies Utilisées**
-- **Backend** : Java (Spring Boot)
-- **Frontend** : React
-- **Base de Données** : PostgreSQL
-- **DevOps** : Docker, Docker Compose, Kubernetes, Jenkins, Helm
+1. **Conteneurisation des services avec Docker** : Emballage du backend, du frontend et de la base de données PostgreSQL dans des conteneurs Docker.
+2. **Orchestration des services avec Docker Compose** : Gestion de plusieurs conteneurs pour faciliter le développement local.
+3. **Automatisation du pipeline CI/CD avec Jenkins** : Construction, scan de vulnérabilités et déploiement automatisés des images Docker.
+4. **Déploiement évolutif avec Kubernetes et Helm** : Orchestration des services dans un cluster Kubernetes avec une gestion simplifiée via Helm.
+5. **Gestion des configurations avec ArgoCD** : Mise en place de GitOps pour une gestion des déploiements basée sur le contrôle de version.
+6. **Visualisation des métriques avec Grafana** : Affichage des métriques collectées pour une meilleure visibilité du système.
 
 ---
 
