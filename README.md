@@ -62,11 +62,14 @@ Ce projet met en œuvre les pratiques DevOps modernes avec un backend Spring Boo
 ![Exécution des Services avec Docker Compose](./Captures/docker_compose.png)  
 
 5. Configurez Jenkins et exécutez le pipeline CI/CD :
-   - Configurez Jenkins pour automatiser les étapes CI/CD.
-   - Poussez les images Docker sur Docker Hub :
+   - Configurez Jenkins pour automatiser les étapes CI/CD :
 
 ![Interface de Configuration de Jenkins](./Captures/jenckins.png) 
 ![Publication des Images sur Docker Hub avec Jenkins](./Captures/docker_hub+jenkins.png)  
+
+- Poussez les images Docker sur Docker Hub :
+
+  
 ![Interface Docker Hub](./Captures/docker_hub.png) 
      
    - Exécutez le pipeline complet :
