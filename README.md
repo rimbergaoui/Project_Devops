@@ -94,15 +94,12 @@ Ce projet met en œuvre les pratiques DevOps modernes avec un backend Spring Boo
 ![Argo](./Captures/argocd.png) 
 
 7. Monitoring et Observabilité :
-
 L'intégration d'un système de monitoring est essentielle pour la visibilité des performances des services. Voici les étapes suivies pour configurer le monitoring avec **Prometheus** et **Grafana** :
-
-    - Déploiement de Prometheus pour collecter les métriques : 
     
+    - Déploiement de Prometheus pour collecter les métriques : 
     ![Prometheus](./Captures/prometheus.png) 
 
     - Configuration de Prometheus et Grafana : 
-
     ![Grafana](./Captures/grafana.png) 
 
 
