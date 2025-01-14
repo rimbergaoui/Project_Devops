@@ -57,7 +57,7 @@ Ce projet met en œuvre les pratiques DevOps modernes avec un backend Spring Boo
 
  3. Configurez PostgreSQL dans Docker :
     
-    - PostgreSQL est conteneurisé et intégré au backend via Docker Compose.
+    - **PostgreSQL** est conteneurisé et intégré au backend via Docker Compose.
 
 ![Configuration de PostgreSQL avec Docker](./Captures/postgres+docker.png)
 
@@ -70,7 +70,7 @@ Ce projet met en œuvre les pratiques DevOps modernes avec un backend Spring Boo
 
 5. Configurez Jenkins et exécutez le pipeline CI/CD :
    
-   - Configurez Jenkins pour automatiser les étapes CI/CD :
+   - Configurez **Jenkins** pour automatiser les étapes CI/CD :
 
 ![Interface de Configuration de Jenkins](./Captures/jenckins.png) 
 ![Publication des Images sur Docker Hub avec Jenkins](./Captures/docker_hub+jenkins.png)  
@@ -86,12 +86,26 @@ Ce projet met en œuvre les pratiques DevOps modernes avec un backend Spring Boo
    
 6. Déployez les services sur Kubernetes :
    
-    - Utilisez Helm Charts pour orchestrer le déploiement Kubernetes :
+    - Utilisez **Helm Charts** pour orchestrer le déploiement Kubernetes :
       
 ![Déploiement Kubernetes via Helm Charts](./Captures/charts.png)  
 
-    - Intégration de ArgoCD pour la mise en place d’une stratégie GitOps : 
+    - Intégration de **ArgoCD** pour la mise en place d’une stratégie GitOps : 
     
 ![Argo](./Captures/argocd2.png) 
 ![Argo](./Captures/argocd.png) 
+
+7. Monitoring et Observabilité :
+
+L'intégration d'un système de monitoring est essentielle pour la visibilité des performances des services. Voici les étapes suivies pour configurer le monitoring avec **Prometheus** et **Grafana** :
+
+    - Déploiement de Prometheus pour collecter les métriques : 
+    
+    ![Prometheus](./Captures/prometheus.png) 
+
+    - Configuration de Prometheus et Grafana : 
+
+    ![Grafana](./Captures/grafana.png) 
+
+
     
